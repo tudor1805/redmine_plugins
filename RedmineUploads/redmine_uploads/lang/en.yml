@@ -1,0 +1,31 @@
+# English strings go here for Rails i18n
+en:
+  field_description: "Description"
+
+  label_author: "Author"
+  label_filename: "File"
+  label_date: "Upload date"
+  label_filesize: "Size"
+
+  label_optional_description: "Descriere opțională"
+  label_max_size: "Dimensiune maximă"
+
+  label_upload_form: "Upload form"
+  label_upload_form_plural: "Upload forms"
+  label_upload_form_new: "New upload form"
+  label_upload_form_edit: "Edit upload form"
+  label_no_upload_forms: "No forms to display"
+  label_multiple_uploads: "Multiple uploads"
+
+  label_download_all: "Download all"
+  label_title_required: "Title(required)"
+
+  text_are_you_sure: "Are you sure?"
+  text_confirm_add_file: "This will delete any previously uploaded files. Are you sure you want to do this?"
+
+  button_create: "Create"
+  button_edit: "Edit"
+  button_delete: "Delete"
+  button_add_file: "Add"
+  button_save: "Save"
+  button_cancel: "Cancel"

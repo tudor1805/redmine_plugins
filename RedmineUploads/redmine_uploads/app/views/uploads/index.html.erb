@@ -1,0 +1,32 @@
+<div class="contextual">
+  <%= link_to_if_authorized l(:label_upload_form_new),
+                          {:action => 'new', :project_id => @project},
+                           :class => 'icon icon-add',
+                           :onclick => 'Element.show("add-upload-form"); Form.Element.focus("upload_form_title"); return false;' %>
+</div>
+
+<div id="add-upload-form" style="display:none;">
+  <h2>
+    <%= l(:label_upload_form_new) %>
+  </h2>
+  <% form_tag({:action => 'create'}, :class => "tabular") do %>
+    <%= render :partial => 'form' %>
+<div class="box">
+
+</div>
+    <%= submit_tag l(:button_create) %>
+    <%= link_to l(:button_cancel), "#", :onclick => 'Element.hide("add-upload-form")' %>
+  <% end %>
+</div>
+
+<h2>
+  <%= l(:label_upload_form_plural) %>
+</h2>
+<% if @upload_forms.blank? %>
+   <p class="nodata">
+     <%= l(:label_no_upload_forms) %>
+   </p> 
+<% else %>
+  <%= render :partial => 'upload_form', :collection => @upload_forms%> 
+<% end %>
+

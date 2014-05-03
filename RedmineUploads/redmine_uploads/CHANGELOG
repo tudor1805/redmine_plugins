@@ -1,0 +1,13 @@
+0.0.1 
+
+0.0.2 -Added the possibility that an user can
+       upload multiple files per form
+      -Uses rubyzip for archiving instead of tar
+      4.08.2011
+      -Fixed a plugin loading bug which seems to appear only in development mode 
+       Modified init.rb, and added a few lines of code
+      14.08.2011
+      -Fixed a locales mismatch problem
+       The files in /lang , provided for backward compatibility with Rails were not at the same version with those in /config/lang
+      -Fixed a bug regarding the activity provider initialization in init.rb 
+      -Small code revision       

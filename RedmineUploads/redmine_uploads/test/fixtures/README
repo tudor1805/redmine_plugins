@@ -1,0 +1,6 @@
+The fixtures from the folder 'functional_fixtures', will probably be overwritten by Rails,
+when running 'rake test:plugins:units PLUGIN=redmine_uploads' to test the plugin, because
+they are standard Redmine classes, and other files with the same name exist in ${RAILS_ROOT}/test/fixtures.
+I would advise copying them inside ${RAILS_ROOT}/test/fixtures, eventually backing up the existing ones there,
+and run the tests again.
+Most probable, a script will exist to do the job in a newer version of the plugin. 

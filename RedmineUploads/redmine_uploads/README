@@ -1,0 +1,76 @@
+== Redmine Uploads
+
+A plugin for managing upload forms
+
+1= Installation
+
+  A quick tutorial can be found here:
+  http://www.redmine.org/wiki/redmine/Plugins#Installing-a-plugin
+  --------------------------------------------------------------------- 
+  
+  Basicly, there are three steps to take in order to install this plugin:
+  1. Copy the folder (redmine_uploads) inside #{REDMINE_ROOT}/vendor/plugins
+  2. Go to #{REDMINE_ROOT} and run rake db:migrate_plugins
+     This will insert the models into the database  
+  3. Restart redmine
+     go to #{REDMINE_ROOT}
+     ./script/server , if you installed Redmine from sources 
+     ./ctlscript restart redmine if you are using BitNami Redmine      
+
+  Now, when logged on as an admin, in the Plugins section, under the
+  Administration panel, you should see the plugin.
+
+  Redmine uploads is a 'per project' module. In order to use it, you should 
+  enable it from Settings => Modules from your project.
+  
+  In order to use it efficiently, make sure you set the correct permissions 
+  for the roles under Administration => Roles & Permissions 
+
+  **Dependencies**
+    This plugin depends on the 'rubyzip' gem
+    You can install it by "sudo gem install rubyzip"
+
+2= Help
+
+  For specific questions you can always visit the official Redmine forums
+    http://www.redmine.org
+
+3= Features
+
+* Supports Searching 
+
+* Activity provider
+
+* By default, an user is allowed to upload a single file per upload form.
+  (like a homework assignment on Moodle for ex.)
+  Since version 0.0.2, The user has the possibility to create an upload form wiht multiple file uploads option.
+
+* A privileged user can see all the uploaded files for a specific form,
+  and download an archive with all of them.
+  The unprivileged user will see only the file(s) uploaded by him. 
+    
+4= Translations
+  
+  *en 
+  *ro
+
+5= License
+  
+Copyright <tudor.cornea@gmail.com>
+
+This software is licensed under GPL 2.0 license. 
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+

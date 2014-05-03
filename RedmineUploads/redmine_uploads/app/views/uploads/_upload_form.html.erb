@@ -1,0 +1,17 @@
+<p>
+  <b>
+    <%= link_to h(upload_form.title.capitalize), {:controller => 'uploads', :action => 'show', :id => upload_form} %> 
+  </b>
+  <hr>
+</p>
+
+<p>
+  <em>   
+    <%= format_time(upload_form.created_on) %>
+  </em>
+</p>
+
+<div class="wiki">
+  <%= textilizable( truncate_lines(upload_form.description) ) %>
+</div>
+

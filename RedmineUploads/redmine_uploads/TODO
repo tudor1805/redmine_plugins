@@ -1,0 +1,4 @@
+*More translations
+*Improve & simplify test cases
+*Add named_scope querying methods to the model
+*Improve send_file 

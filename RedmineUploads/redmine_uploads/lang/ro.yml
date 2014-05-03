@@ -1,0 +1,32 @@
+# Romanian strings go here for Rails i18n
+#ățîș
+ro:
+  field_description: "Descriere"
+
+  label_author: "Autor"
+  label_filename: "Fișier"
+  label_date: "Dată incărcare"
+  label_filesize: "Dimensiune"
+
+  label_optional_description: "Descriere opțională"
+  label_max_size: "Dimensiune maximă"
+
+  label_upload_form: "Formular upload"
+  label_upload_form_plural: "Formulare de upload"
+  label_upload_form_new: "Creare formular nou"
+  label_upload_form_edit: "Editare formular"
+  label_no_upload_forms: "Nu există niciun formular"
+  label_multiple_uploads: "Incărcări multiple"
+
+  label_download_all: "Descarcă tot"
+  label_title_required: "Titlu(obligatoriu)"
+
+  text_are_you_sure: "Sunteți sigur?"
+  text_confirm_add_file: "Toate fișierele incărcate anterior vor fi șterse. Sunteți siguri că doriți asta?"
+
+  button_create: "Crează"
+  button_edit: "Editează"
+  button_delete: "Sterge"
+  button_add_file: "Adaugă fișier"
+  button_save: "Salveaza"
+  button_cancel: "Anulează"

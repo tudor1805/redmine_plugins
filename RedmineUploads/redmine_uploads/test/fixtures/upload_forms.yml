@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+uploads_001:
+  id: 1
+  title: "Test upload form"
+  description: "A test upload form"
+  project_id: 1
+  created_on: 2006-07-19 21:07:27 +02:00
+uploads_002:
+  id: 2
+  title: "Another test upload form"
+  description: 
+  project_id: 1
+  created_on: 2011-07-05 04:30:59
